@@ -24,7 +24,6 @@ typedef void(^inputingBlock)(UITextField *tf,NSString *tfStr);
                    warErrors:(NSArray*)wars
                   warNoNulls:(NSArray*)nuls
                  withBoxType:(WarType)warType
-              isAutoGetFocus:(BOOL)isAuto
                      keepara:(NSString*)keepar;
 
 - (void)jw_AutoGetFocusTfAry:(NSArray*)tfs index:(int)index;

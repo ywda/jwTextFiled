@@ -315,7 +315,6 @@ static inputingBlock focusBlock = ^(UITextField*tf,NSString*tfStr){};
                    warErrors:(NSArray*)wars
                   warNoNulls:(NSArray*)nuls
                  withBoxType:(WarType)warType
-              isAutoGetFocus:(BOOL)isAuto
                      keepara:(NSString*)keepar{
     
     if ( 0 == [textFileds count]) {
@@ -428,13 +427,13 @@ static inputingBlock focusBlock = ^(UITextField*tf,NSString*tfStr){};
             // 信用卡有效期
         case TextFiledType4Dig:
             
-            isTrue = [RegularCheck regularOfTextFiledType3Dig:textFiled];
+            isTrue = [RegularCheck regularOfTextFiledType4Dig:textFiled];
             break;
             
             // 信用卡安全码
         case TextFiledType3Dig:
             
-            isTrue = [RegularCheck regularOfTextFiledType4Dig:textFiled];
+            isTrue = [RegularCheck regularOfTextFiledType3Dig:textFiled];
             break;
             
             // 汉字不做处理
